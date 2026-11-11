@@ -32,7 +32,7 @@
 }
 
 .site-footer__logo {
-  width: 158px;
+  width: 240px;
   height: auto;
   margin: 0;
 }
@@ -53,8 +53,8 @@
 .site-footer__social a:hover { color: var(--color-gold); }
 
 .site-footer__social svg {
-  width: 18px;
-  height: 18px;
+  width: 28px;
+  height: 28px;
 }
 
 .site-footer__copy,

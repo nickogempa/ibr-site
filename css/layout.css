@@ -1,9 +1,23 @@
-/* Estrutura: seções, container e grids */
-.section { position: relative; padding: var(--section-padding); }
-.section--alt { background: linear-gradient(160deg, var(--color-blue) 0%, var(--color-night) 85%); }
+/* ==========================================================
+   Estrutura compartilhada das seções
+   HTML: .section, .container, .grid, .split
+   ========================================================== */
 
-.container { max-width: var(--container-width); margin: 0 auto; }
+.section {
+  position: relative;
+  padding: var(--section-padding);
+}
 
+.section--alt {
+  background: linear-gradient(160deg, var(--color-blue) 0%, var(--color-night) 85%);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* Grade de cards (projetos, ministérios, cultos) */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -11,10 +25,23 @@
   margin-top: 50px;
 }
 
+/* Duas colunas: texto + mídia (propósito e localização) */
 .split {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
-.split--location { grid-template-columns: 1fr 1.3fr; gap: 50px; }
+
+.split--location {
+  grid-template-columns: 1fr 1.3fr;
+  gap: 50px;
+}
+
+/* ----- Tablet e celular ----- */
+@media (max-width: 860px) {
+  .section { padding: 80px 6%; }
+
+  .split,
+  .split--location { grid-template-columns: 1fr; }
+}

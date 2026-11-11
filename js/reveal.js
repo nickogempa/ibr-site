@@ -1,4 +1,6 @@
-/* Revela elementos [data-reveal] ao entrarem na tela */
+/* Revelação ao rolar.
+   HTML: [data-reveal] e [data-delay]
+   Adiciona .is-visible quando o bloco entra na tela. */
 (() => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

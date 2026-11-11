@@ -1,4 +1,5 @@
-/* Efeito 3D: inclina elementos [data-tilt] e move as luzes do hero com o mouse */
+/* Efeito 3D com o mouse.
+   HTML: [data-tilt] nos cards e .hero__orb no hero */
 (() => {
   const MAX_TILT = 16;
 

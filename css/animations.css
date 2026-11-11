@@ -1,22 +1,23 @@
-/* Keyframes e animações de revelação ao rolar */
+/* ==========================================================
+   Revelação ao rolar
+   HTML: data-reveal="up|left|right|zoom" e data-delay="1..4"
+   JS:   js/reveal.js adiciona .is-visible quando o bloco entra na tela
+   ========================================================== */
 
-@keyframes float { 50% { transform: translate(30px, -40px) scale(1.1); } }
-
-@keyframes logo-glow {
-  50% { filter: drop-shadow(0 0 24px rgba(249, 168, 37, .75)) drop-shadow(0 18px 32px rgba(0, 0, 0, .45)); }
-}
-
-/* Reveal: use data-reveal="up|left|right|zoom" e data-delay="1..4" no HTML */
 [data-reveal] {
   opacity: 0;
   transition: opacity 1s ease, transform 1s var(--ease-out);
 }
+
 [data-reveal="up"]    { transform: translateY(60px); }
 [data-reveal="left"]  { transform: translateX(-80px); }
 [data-reveal="right"] { transform: translateX(80px); }
 [data-reveal="zoom"]  { transform: scale(.8); }
 
-[data-reveal].is-visible { opacity: 1; transform: none; }
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
 
 [data-delay="1"] { transition-delay: .12s; }
 [data-delay="2"] { transition-delay: .24s; }
@@ -24,6 +25,15 @@
 [data-delay="4"] { transition-delay: .48s; }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation: none !important; transition: none !important; }
-  [data-reveal] { opacity: 1; transform: none; }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
 }

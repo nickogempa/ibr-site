@@ -1,4 +1,6 @@
-/* Carrossel: arraste ou deslize para o lado para ver as fotos */
+/* Carrossel dos cultos.
+   HTML: [data-carousel], .gallery__track e os botões .gallery__nav
+   Arraste ou use as setas para ver as fotos. */
 (() => {
   document.querySelectorAll('[data-carousel]').forEach((root) => {
     const track = root.querySelector('.gallery__track');

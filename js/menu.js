@@ -1,4 +1,6 @@
-/* Menu mobile: abre/fecha e atualiza aria-expanded */
+/* Menu do celular.
+   HTML: button.nav__toggle e ul#menu
+   Abre, fecha e atualiza aria-expanded. */
 (() => {
   const toggle = document.querySelector('.nav__toggle');
   const list = document.querySelector('.nav__list');

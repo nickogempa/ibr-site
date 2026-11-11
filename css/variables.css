@@ -1,5 +1,7 @@
 /* ==========================================================
-   Design tokens — altere cores, fontes e espaçamentos aqui
+   Tokens do visual — comece por aqui
+   Cores, fontes, espaçamentos, raios e sombras.
+   O layout estreita em 860px (veja o final de cada arquivo CSS).
    ========================================================== */
 :root {
   /* Cores */

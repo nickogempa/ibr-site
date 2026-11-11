@@ -1,0 +1,95 @@
+/* ==========================================================
+   Rodapé
+   HTML: footer.site-footer
+   JS:   js/footer.js (preenche o ano em #current-year)
+   ========================================================== */
+
+.site-footer {
+  padding: 20px 6% 18px;
+  background: var(--color-night-deep);
+  font-size: .8rem;
+}
+
+.site-footer__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.site-footer__brand,
+.site-footer__aside {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.site-footer__brand { align-items: flex-start; }
+
+.site-footer__aside {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.site-footer__logo {
+  width: 158px;
+  height: auto;
+  margin: 0;
+}
+
+.site-footer__social {
+  display: flex;
+  gap: 40px;
+  margin: 0;
+}
+
+.site-footer__social a {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  transition: color .3s;
+}
+
+.site-footer__social a:hover { color: var(--color-gold); }
+
+.site-footer__social svg {
+  width: 18px;
+  height: 18px;
+}
+
+.site-footer__copy,
+.site-footer__note {
+  margin: 0;
+  font-weight: 200;
+  line-height: 1.4;
+  opacity: .72;
+}
+
+.site-footer__copy { white-space: nowrap; }
+
+.site-footer__note {
+  max-width: 290px;
+  text-align: right;
+}
+
+/* ----- Tablet e celular ----- */
+@media (max-width: 860px) {
+  .site-footer__bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .site-footer__aside {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .site-footer__logo { width: min(150px, 52vw); }
+  .site-footer__copy { white-space: normal; max-width: 280px; }
+
+  .site-footer__note {
+    max-width: 280px;
+    text-align: left;
+  }
+}

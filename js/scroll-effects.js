@@ -1,4 +1,5 @@
-/* Efeitos ligados à rolagem: barra de progresso, header e parallax do hero */
+/* Efeitos ligados à rolagem.
+   HTML: .progress-bar, header.site-header, .hero__bg, .hero__content */
 (() => {
   const progress = document.querySelector('.progress-bar');
   const header = document.querySelector('.site-header');

@@ -12,21 +12,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=Playfair+Display:ital,wght@1,600&display=swap">
 
-  <!-- Estilos (a ordem importa) -->
+  <!--
+    Estilos, na ordem da página. Para editar:
+    cores e fontes ........ css/variables.css
+    títulos e texto base .. css/base.css
+    grades das seções ..... css/layout.css
+    menu .................. css/header.css
+    botões e cards ........ css/components.css
+    fotos e carrossel ..... css/photos.css
+    hero, visão, mapa ..... css/sections.css
+    rodapé ................ css/footer.css
+    animações ao rolar .... css/animations.css
+  -->
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/photos.css">
   <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
   <div class="progress-bar" role="presentation"></div>
 
-  <!-- ========== CABEÇALHO ========== -->
+  <!-- ========== CABEÇALHO (css/header.css, js/menu.js) ========== -->
   <header class="site-header">
     <nav class="nav" aria-label="Navegação principal">
       <a class="nav__brand" href="#inicio">
@@ -46,7 +59,7 @@
 
   <main id="conteudo">
 
-    <!-- ========== HERO ========== -->
+    <!-- ========== HERO (css/sections.css) ========== -->
     <section class="hero" id="inicio" aria-labelledby="hero-title">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="hero__orb hero__orb--blue" aria-hidden="true"></div>
@@ -63,7 +76,7 @@
       </div>
     </section>
 
-    <!-- ========== PROPÓSITO ========== -->
+    <!-- ========== PROPÓSITO (css/layout.css, css/photos.css) ========== -->
     <section class="section" id="proposito" aria-labelledby="proposito-title">
       <div class="container split">
         <div data-reveal="left">
@@ -90,7 +103,7 @@
       </div>
     </section>
 
-    <!-- ========== VISÃO MISSIONÁRIA ========== -->
+    <!-- ========== VISÃO MISSIONÁRIA (css/sections.css) ========== -->
     <section class="section vision" id="visao" aria-label="Visão missionária">
       <div class="container">
         <span class="eyebrow" data-reveal="up">Visão missionária</span>
@@ -108,7 +121,7 @@
       </div>
     </section>
 
-    <!-- ========== PROJETOS SOCIAIS ========== -->
+    <!-- ========== PROJETOS SOCIAIS (css/components.css, css/photos.css) ========== -->
     <section class="section" id="projetos-sociais" aria-labelledby="projetos-title">
       <div class="container">
         <header data-reveal="up">
@@ -149,7 +162,7 @@
       </div>
     </section>
 
-    <!-- ========== MINISTÉRIOS ========== -->
+    <!-- ========== MINISTÉRIOS (css/components.css, css/sections.css) ========== -->
     <section class="section section--alt" id="ministerios" aria-labelledby="ministerios-title">
       <div class="container">
         <header data-reveal="up">
@@ -169,9 +182,7 @@
             <a class="card" href="https://www.instagram.com/unikidsibrs" target="_blank" rel="noopener" data-tilt data-reveal="up" data-delay="2">
               <span class="card__icon" aria-hidden="true"></span>
               <h3 class="card__title">Ministério Infantil</h3>
-              <p class="card__text">
-                Ensinando as crianças no caminho do Senhor.
-              </p>
+              <p class="card__text">Ensinando as crianças no caminho do Senhor.</p>
             </a>
           </li>
           <li>
@@ -233,7 +244,7 @@
       </div>
     </section>
 
-    <!-- ========== CULTOS ========== -->
+    <!-- ========== CULTOS (css/components.css, css/photos.css, js/carousel.js) ========== -->
     <section class="section section--alt" id="cultos" aria-labelledby="cultos-title">
       <div class="container">
         <header data-reveal="up">
@@ -295,7 +306,7 @@
       </div>
     </section>
 
-    <!-- ========== LOCALIZAÇÃO ========== -->
+    <!-- ========== LOCALIZAÇÃO (css/sections.css) ========== -->
     <section class="section" id="localizacao" aria-labelledby="localizacao-title">
       <div class="container split split--location">
         <div data-reveal="left">
@@ -318,7 +329,7 @@
 
   </main>
 
-  <!-- ========== RODAPÉ ========== -->
+  <!-- ========== RODAPÉ (css/footer.css, js/footer.js) ========== -->
   <footer class="site-footer">
     <div class="site-footer__bar">
       <div class="site-footer__brand">
@@ -345,7 +356,7 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
+  <!-- Scripts: cada arquivo cuida de um comportamento. O comentário no topo diz qual HTML ele usa. -->
   <script src="js/menu.js" defer></script>
   <script src="js/reveal.js" defer></script>
   <script src="js/scroll-effects.js" defer></script>

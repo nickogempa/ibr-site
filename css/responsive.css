@@ -1,0 +1,26 @@
+/* Ajustes para tablet e celular */
+@media (max-width: 860px) {
+  .section { padding: 80px 6%; }
+  .hero__logo { width: min(420px, 86vw); margin-bottom: 22px; }
+  .hero__body { transform: translateY(28px); }
+  .split, .split--location { grid-template-columns: 1fr; }
+  .gallery__item { flex-basis: 82%; }
+  .photo-loop { margin-top: 36px; }
+  .photo-loop--side { margin-top: 28px; }
+  .featured-photo { transform: none; }
+  .vision { background-attachment: scroll; }
+
+  .nav__toggle { display: block; }
+  .nav__list {
+    position: fixed; top: 0; right: -100%; width: 70%; height: 100vh;
+    flex-direction: column; justify-content: center; align-items: center; gap: 30px;
+    background: var(--color-night); font-size: 1.1rem; transition: right .4s;
+  }
+  .nav__list.is-open { right: 0; }
+
+  .site-footer__bar { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .site-footer__aside { align-items: flex-start; text-align: left; }
+  .site-footer__logo { width: min(150px, 52vw); }
+  .site-footer__copy { white-space: normal; max-width: 280px; }
+  .site-footer__note { max-width: 280px; text-align: left; }
+}

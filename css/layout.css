@@ -1,0 +1,20 @@
+/* Estrutura: seções, container e grids */
+.section { position: relative; padding: var(--section-padding); }
+.section--alt { background: linear-gradient(160deg, var(--color-blue) 0%, var(--color-night) 85%); }
+
+.container { max-width: var(--container-width); margin: 0 auto; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 26px;
+  margin-top: 50px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.split--location { grid-template-columns: 1fr 1.3fr; gap: 50px; }

@@ -1,0 +1,36 @@
+/* ==========================================================
+   Design tokens — altere cores, fontes e espaçamentos aqui
+   ========================================================== */
+:root {
+  /* Cores */
+  --color-blue:       #0a4fa8;
+  --color-blue-light: #0d8bea;
+  --color-night:      #031d44;
+  --color-night-deep: #021432;
+  --color-gold:       #f9a825;
+  --color-gold-light: #ffc04d;
+  --color-white:      #f5f8ff;
+
+  /* Superfícies translúcidas */
+  --surface-1: rgba(255, 255, 255, .08);
+  --surface-2: rgba(255, 255, 255, .14);
+  --border-soft: rgba(255, 255, 255, .22);
+
+  /* Tipografia */
+  --font-body:    'Poppins', sans-serif;
+  --font-display: 'Playfair Display', serif;
+
+  /* Espaçamento e forma */
+  --section-padding: 110px 6%;
+  --container-width: 1150px;
+  --radius-md: 20px;
+  --radius-lg: 22px;
+  --radius-pill: 50px;
+
+  /* Sombras */
+  --shadow-md: 0 14px 40px rgba(0, 0, 0, .45);
+  --shadow-lg: 0 30px 70px rgba(0, 0, 0, .5);
+
+  /* Transições */
+  --ease-out: cubic-bezier(.2, .7, .2, 1);
+}
